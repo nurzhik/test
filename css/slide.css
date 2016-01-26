@@ -1,0 +1,315 @@
+/* Slider */
+
+.slick-slider {
+    position: relative;
+    display: block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+.news.slick-initialized.slick-slider {
+    margin-top: 60px;
+}
+.slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    /* overflow: hidden; */
+    /* height: 487px; */
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide {
+    display: none;
+    float: left;
+    /* height: 100%; */
+    min-height: 1px;
+    /* overflow: hidden; */
+    outline: none;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.item-block.slick-slide {
+    text-align: center;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide {
+    display: block;
+    text-align: center;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid #cecece;
+    /* margin-left: 5px; */
+    margin-bottom: 10px;
+}
+
+.slider-description {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    left: 0;
+    width: 1000px;
+    /* height: 315px; */
+    margin: 0px auto auto;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 1;
+}
+.slider-des-form {
+    background-image: url(../img/form_bg.png);
+    height: 183px;
+    background-size: cover;
+    margin-top: 11px;
+}
+.slider-des-form-title {
+    color: #5d5d5d;
+    font-family: "PTSansBold";
+    font-size: 18px;
+    padding-top: 31px;
+    margin-bottom: 20px;
+}
+
+.input_top {
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid #252525;
+    width: 160px;
+    font-family: "PTSansRegular";
+    line-height: 18px;
+    font-size: 16px;
+    margin: 0 15px;
+}
+
+
+
+.slick-dots {
+    text-align: center;
+    overflow: hidden;
+    padding: 0;
+    margin: 50px 0;
+}
+.slick-dots li {
+    padding: 0;
+    text-align: center;
+    display: inline-block;
+    list-style: none;
+    text-align: center;
+    margin: 0 10px;
+}
+.slick-dots li button {
+    width: 110px;
+    border: none;
+    outline: none;
+    height: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    display: block;
+    color: #cd851f;
+    background: #cd851f;
+    border-radius: 8px;
+}
+.slick-dots li.slick-active button{
+    color: #5ba000;
+    background: #5ba000;
+}
+
+
+.slider.slick-initialized.slick-slider {
+    margin-bottom: 25px;
+    border: 8px solid #cda63c;
+}
+.slider .slick-nav {
+    position: absolute;
+    z-index: 99;
+    top: 50%;
+    cursor: pointer;
+}
+.slider .slick-nav--next {
+    right: -52px;
+    background-image: url(../img/slider_right.png);
+    width: 35px;
+    height: 60px;
+    background-repeat: no-repeat;
+}
+
+
+.slider img {
+    width: 100%;
+    display: block;
+}
+.slider .slick-nav--prev {
+    left: -52px;
+    background-image: url(../img/slider_left.png);
+     width: 35px;
+    height: 60px;
+    background-repeat: no-repeat;
+}
+/*product*/
+.product {
+    margin-bottom: 40px;
+}
+.product_item, .news_item {
+    padding: 8px 8px 25px;
+    background: #fff;
+    font-family: "NeueCyr-Bold";
+    color: #220b06;
+    width: 224px;
+    margin: 0 auto;
+    display: block;
+    height: 372px;
+}
+
+.product_item:hover,.news_item:hover{
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ddbc53 ), color-stop(50%,#d6b349), color-stop(51%,#c59a31 ), color-stop(100%,#c49a30));
+    background: -webkit-linear-gradient(top, #d6b349 30%,#d6b349 46%,#c59a31 78%,#c49a30 45%);
+    background: -o-linear-gradient(top, #ddbc53 30%,#d6b349 46%,#c59a31 78%,#c49a30 45%);
+    background: -ms-linear-gradient(top, #ddbc53 30%,#d6b349 46%,#c59a31 78%,#c49a30 45%);
+    background: linear-gradient(to bottom, #ddbc53 30%,#d6b349 46%,#c59a31 78%,#c49a30 45%);
+    cursor:pointer;
+}
+.product_item:hover .produc_list_item__brand{
+color:#fff;
+}
+.news{
+    margin-bottom:40px;
+}
+.product_item:hover .produc_list_item__name{
+color:#fff;
+}
+.news_item:hover .news_des{
+color:#fff;
+}
+.product_item_img,.news_item_img {
+    width: 100%;
+    height: 316px;
+    overflow: hidden;
+    border: 1px solid #acacac;
+    margin-bottom: 12px;
+}
+.product_item_img img, .news_item_img img {
+    width: 100%;
+    display: block;
+}
+.produc_list_item__name, .produc_list_item__brand {
+    display: block;
+}
+
+.news_price {
+    color: #2e9705;
+}
+.old_price {
+    text-decoration: line-through;
+    margin-right: 5px;
+}
+.price_slider {
+    margin-top: 5px;
+}
+.product_item .slick-nav {
+    position: absolute;
+    z-index: 99;
+    top: 50%;
+    cursor: pointer;
+}
+.product-next {
+    position: absolute;
+    right: -52px;
+    background-image: url(../img/slider_right.png);
+    width: 35px;
+    height: 60px;
+    background-repeat: no-repeat;
+    top: 50%;
+    cursor: pointer;
+}
+.product-prev {
+    position: absolute;
+    left: -52px;
+    background-image: url(../img/slider_left.png);
+    width: 35px;
+    height: 60px;
+    background-repeat: no-repeat;
+    top: 50%;
+    cursor: pointer;
+}
+.photo-slider-small.photo-small.slick-initialized.slick-slider {
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    width: 23%;
+    margin-left: 5px;
+    z-index: 99;
+}
+.slider-smallimg img {
+    width: 100%;
+    display: block;
+}
+.photo-slider-big.photo-big.slick-initialized.slick-slider {
+    z-index: 6;
+}
